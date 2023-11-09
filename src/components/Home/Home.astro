@@ -2,7 +2,11 @@
 ---
 
 <section class="hero">
-  <h1>Hi, I'm <span class="line-through"><b>Sebastian T. </b>, a.k.a</span><b> Sir Galanga.</b></h1>
+  <h1>
+    Hi, I'm <span class="line-through"><b>Sebastian T.</b>, a.k.a</span><b>
+      Crazy Galanga.</b
+    >
+  </h1>
   <h3>Dev Galanga and <b>Frontend Designer</b></h3>
   <div class="line"></div>
 </section>
@@ -57,5 +61,50 @@
     height: 100px;
     margin: 0 auto;
     margin-top: 100px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .hero {
+      margin-top: 100px;
+    }
+
+    .line {
+      margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .hero {
+      border-bottom: 1px solid#eaeaea;
+      margin-bottom: 150px;
+      padding-bottom: 150px;
+      height: auto;
+    }
+
+    .line {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .hero {
+      margin-bottom: 100px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      padding-bottom: 100px;
+    }
+    h1 {
+      font-size: 18vw;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    h1 {
+      font-size: 17vw;
+    }
+
+    h3 {
+      font-size: 1.425em;
+    }
   }
 </style>

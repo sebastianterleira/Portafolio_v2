@@ -54,7 +54,6 @@ picture,
 video,
 iframe,
 figure {
-	max-width: 100%;
 	width: 100%;
 	display: block;
 	/* opcional */
@@ -161,7 +160,6 @@ td {
 
 /* Evitamos problemas con los SVG */
 svg {
-	width: 100%;
 	display: block;
 	fill: currentColor;
 }
@@ -194,7 +192,7 @@ body {
 	font-family: var(--font-family);
 }
 
-html {
+html, body {
 	overflow-x: hidden;
 }
 

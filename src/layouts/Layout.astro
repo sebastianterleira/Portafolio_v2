@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import "../styles/GlobalStyles.css";
 
 interface Props {
@@ -44,7 +43,7 @@ const { title } = Astro.props;
 		<meta property="og:image:alt" content="https://midu.dev/favicon/apple-touch-icon.png">  -->
   </head>
   <body>
-    <Header />
+    <div class="line"></div>
     <main class="main">
       <slot />
     </main>
@@ -54,6 +53,13 @@ const { title } = Astro.props;
         -moz-animation: fadein 2s;
         -o-animation: fadein 2s;
         animation: fadein 2s;
+      }
+
+      .line {
+        border-left: 1px solid transparent;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 0px;
       }
 
       @keyframes fadein {

@@ -1,11 +1,12 @@
 ---
-import Logo from "../assets/Logo.astro";
+import Logo from "../assets/Logo.png"
+import { Image } from "astro:assets";
 ---
 
 <header class="header">
   <nav class="nav">
     <div>
-      <Logo />
+      <Image src={Logo} width="52" height="50"/ alt="logo">
     </div>
     <div class="nav__links">
       <a href="#portfolio" class="links__item">Portfolio</a>

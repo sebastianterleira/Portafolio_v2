@@ -1,10 +1,12 @@
 ---
 import WisiIndie from "../../assets/WisiIndie.webp";
+import Spotify from "../../assets/SpotifyClone.webp";
+import Phone from "../../assets/Phone.webp";
 ---
 
-<section class="proyecto">
-  <article class="work__type--default">
-    <div class="wrapper">
+<section>
+  <article class="wrapper">
+    <div class="conteiner">
       <h3>WisiIndie</h3>
       <h2>
         <b>Website</b>
@@ -12,22 +14,40 @@ import WisiIndie from "../../assets/WisiIndie.webp";
       <a href="https://wisi-indie.vercel.app/" target="_blank" rel="noreferrer"
         >View Site</a
       >
-      <figure>
+      <picture class="padre">
         <img
           src={WisiIndie.src}
-          class="img--work1"
+          class="wisi__indie"
           alt="Mockup de la website de WisiIndie"
         />
-      </figure>
+        <img src={Phone.src } 
+        class="wisi__indie_d"
+        alt="Mockup de la website de WisiIndie"
+        />
+      </picture>
+    </div>
+  </article>
+  <article class="wrapper" style="background-color: #fafbfc; padding-top: 9.375rem;">
+    <div class="conteiner">
+      <h3>Spotify Clone</h3>
+      <h2>
+        <b>Website</b>
+      </h2>
+      <a href="https://wisi-indie.vercel.app/" target="_blank" rel="noreferrer"
+        >View Site</a
+      >
+      <picture class="padre">
+        <img
+          src={Spotify.src}
+          class="wisi__indie"
+          alt="Mockup de la website de WisiIndie"
+        />
+      </picture>
     </div>
   </article>
 </section>
 
 <style>
-  .proyecto {
-    height: auto;
-  }
-
   section {
     display: -webkit-box;
     display: -webkit-flex;
@@ -48,10 +68,10 @@ import WisiIndie from "../../assets/WisiIndie.webp";
     justify-content: center;
     height: 100vh;
     margin: auto;
-    padding: 0 3rem;
+    height: auto;
   }
 
-  .work__type--default {
+  .wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -63,12 +83,12 @@ import WisiIndie from "../../assets/WisiIndie.webp";
     -ms-flex-pack: center;
     justify-content: center;
     max-width: 100%;
-    padding-bottom: 9.375rem;
     text-align: center;
-    border-bottom: 1px solid#eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 3rem 9.375rem;
   }
 
-  .wrapper {
+  .conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,11 +119,21 @@ import WisiIndie from "../../assets/WisiIndie.webp";
     transition: border.2s ease;
   }
 
-  .img--work1 {
+  .wisi__indie {
     border-radius: 9px;
     margin-top: 2.7rem;
     box-shadow: -1px 3px 28px 0px rgba(0, 0, 0, 0.41);
     -webkit-box-shadow: -1px 3px 28px 0px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: -1px 3px 28px 0px rgba(0, 0, 0, 0.41);
+  }
+
+  .padre {
+    position: relative;
+  }
+
+  .wisi__indie_d {
+    position: absolute;
+    top: 116px;
+    left: 319px;
   }
 </style>

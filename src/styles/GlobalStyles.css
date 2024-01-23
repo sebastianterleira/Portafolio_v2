@@ -201,18 +201,3 @@ body {
 html, body {
 	overflow-x: hidden;
 }
-
-body::-webkit-scrollbar {
-	width: 0.625rem;
-	background: rgb(25, 25, 25);
-}
-
-body::-webkit-scrollbar-thumb {
-	background: #aca7a7;
-	border-radius: 8px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-	background: #7e7e7e;
-	border-radius: 8px;
-}
